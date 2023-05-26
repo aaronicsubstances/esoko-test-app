@@ -8,5 +8,4 @@
 
    3. use `npm start` to run application
 
-   4. use `npm test` to run the integration tests of the application. Due to time constraints, the integration tests are intended to be demonstrative rather than exhaustive.
-
+   4. use `npm test` to run the integration tests of the application.

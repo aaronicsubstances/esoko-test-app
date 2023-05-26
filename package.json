@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "reset-db": "node dbReset.js",
-    "test": "mocha"
+    "test": "mocha -r ./test/setup-env-hook.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/aaronicsubstances/esoko-test-app#readme",
   "devDependencies": {
+    "chai": "^4.3.7",
     "mocha": "^10.2.0"
   },
   "dependencies": {

@@ -43,7 +43,8 @@ async function computeAveragePrice(inputData) {
         const result = await cursor.toArray();
         let averagePrice = 0
         if (result.length > 0) {
-            averagePrice = result[0].averagePrice;
+            // use 2 decimal places to correspond with CSV input data.
+            averagePrice = parseFloat(result[0].averagePrice.toFixed(2));
         }
         return {
             commodity: inputData.commodity,
