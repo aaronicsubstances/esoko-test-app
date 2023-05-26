@@ -10,4 +10,4 @@
 
    4. use `npm test` to run the integration tests of the application.
 
-   5. use `docker-compose build` and `docker-compose up` to run app on Docker, and access it at http://localhost:4500
+   5. use `docker-compose build` and `docker-compose up` to run app on Docker, and access it at http://localhost:4500. The database inside docker will already contain the data in the sample csv file.

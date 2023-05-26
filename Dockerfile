@@ -1,9 +1,9 @@
-FROM node:16-alpine
-RUN mkdir -p /app
+FROM node:16-slim
+RUN mkdir /app && chown node:node /app
 WORKDIR /app
-COPY package.json package-lock.json .
+USER node
+COPY --chown=node:node . .
 RUN npm install
-COPY . .
 RUN npm run reset-db
-EXPOSE 4500
+EXPOSE 3000
 CMD npm start
