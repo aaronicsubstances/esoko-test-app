@@ -9,3 +9,5 @@
    3. use `npm start` to run application
 
    4. use `npm test` to run the integration tests of the application.
+
+   5. use `docker-compose build` and `docker-compose up` to run app on Docker, and access it at http://localhost:4500
